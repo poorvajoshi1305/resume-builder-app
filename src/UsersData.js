@@ -1,8 +1,8 @@
 import React from "react";
-import "./Resume.css";
+// import "./Resume.css";
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-function Resume() {
+function UsersData() {
     const [list, setList] = useState([]);
 
     const getResume = async () => {
@@ -16,12 +16,12 @@ function Resume() {
     useEffect(() => getResume(), []);
     return (
       <>
-        <div className="divform">
+        {/* <div className="divform">
   <div className="container">
     <div className="row px-3 mt-5 mb-5">
       <div className="col-lg-10 col-xl-9 card flex-row mx-auto px-0">
-        <div className="img-left d-none d-md-flex"></div>
-        <ol><h1>Resume</h1> 
+        <div className="img-left d-none d-md-flex"></div> */}
+        <ol><h1>Users Data</h1> 
         {/* <li> */}
         {list.map((item, index) =>(
               <li key={index}>
@@ -35,13 +35,13 @@ function Resume() {
           ))}
           {/* </li> */}
           </ol>
-        <div className="card-body">
+        {/* <div className="card-body">
         </div>
       </div>
     </div>
-  </div>
-</div>
+  </div> */}
+{/* </div> */}
       </>
     )
 };
-export default Resume;
+export default UsersData;
