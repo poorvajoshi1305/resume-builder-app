@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
-    <div className='footer-container' style={{height:"25vh"}}>
+    <div className='footer-container' style={{height:"26vh"}}>
       <div className='footer-links'>
         <div className="leftFooter">
           <div className='footer-link-items'>
